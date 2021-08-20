@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block title %} About {% endblock %}
+{% block content %}
+<section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4">About Negozio Tienda</h1>
+          <p class="lead">The go to place to buy and sell second hand items online</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{%url 'index'%}">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item active"> About</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="about" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>You get to find your perfect second hand item here </h2>
+          <p class="lead">You can sell and buy anything online here on our site all over India for free of cost </p>
+          <img src="{% static 'img/shop.jpg'%}" alt="">
+          <p class="mt-4">Negozio Tienda was started in 2021 and has ever since been booming all over India. we have madeover 20 lakh transactions till now and its still growing. Our site offers its service for free of cost becuse it belives everyone needs to have a platform to address their needs anf hence this site was built mainly for those people who buy second hand products. </p>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'img/Negozio tienda.png'%}" alt="Seller of the month">
+            <div class="card-body">
+              <h5 class="card-title">Negozio Tienda </h5>
+              <h6 class="text-secondary">The best second hand ecommerce website</h6>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="bg-dark text-white text-center">
+    <h2 class="display-4">We Work For You</h2>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at similique!</h4>
+    <hr>
+    <a href="{%url 'listings'%}" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+  </section>
+
+{% endblock %}
